@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { Search, ArrowUpDown, LayoutGrid, List, Plus, FolderPlus } from "lucide-react";
 import { PageHeader, Panel, StatusBadge, ProgressBar, StatCard, EmptyState } from "@/components/kit";
+import { ConstructionMvpFlowBanner } from "@/components/construction-mvp-flow-banner";
 import { useEntity } from "@/components/entity-context";
 import { projects, entityName, fmtMoney, fmtDate, entities, type EntityId } from "@/data/mock";
 import {
@@ -36,7 +37,7 @@ export default function ProjectsIndexPage() {
     client: "",
     manager: "",
     budget: "15000000",
-    location: "Accra, Ghana",
+    location: "Coastal Sector Phase 1",
     status: "planning",
     risk: "low",
     description: "",
@@ -80,7 +81,7 @@ export default function ProjectsIndexPage() {
       name: formData.name,
       code: formData.code,
       entity: formData.entity,
-      client: formData.client || "Meridian Infrastructure",
+      client: formData.client || "Apex Infrastructure Group",
       manager: formData.manager || "Executive Project Lead",
       status: formData.status as any,
       budget: Number(formData.budget) || 10_000_000,
@@ -106,7 +107,7 @@ export default function ProjectsIndexPage() {
       client: "",
       manager: "",
       budget: "15000000",
-      location: "Accra, Ghana",
+      location: "Coastal Sector Phase 1",
       status: "planning",
       risk: "low",
       description: "",
@@ -121,6 +122,8 @@ export default function ProjectsIndexPage() {
 
   return (
     <>
+      <ConstructionMvpFlowBanner compact />
+
       <PageHeader
         title="Projects"
         description={`${rows.length} projects in scope · ${label}`}
@@ -299,7 +302,7 @@ export default function ProjectsIndexPage() {
                 <label className="block text-xs font-semibold text-foreground mb-1">Project Name</label>
                 <input
                   type="text"
-                  placeholder="e.g. Takoradi Port Expansion Phase II"
+                  placeholder="e.g. Metro Port Expansion Phase II"
                   value={formData.name}
                   onChange={(e) => setFormData((f) => ({ ...f, name: e.target.value }))}
                   className="h-9 w-full rounded-md border border-border bg-background px-3 text-xs outline-none focus:border-primary focus:ring-1 focus:ring-primary"

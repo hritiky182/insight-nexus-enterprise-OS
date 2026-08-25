@@ -5,6 +5,7 @@ import {
   CalendarDays, MapPin, User, Building2, FileText, AlertTriangle, Package, Users2,
 } from "lucide-react";
 import { PageHeader, Panel, StatusBadge, ProgressBar, StatCard, KeyValue, EmptyState } from "@/components/kit";
+import { ConstructionMvpFlowBanner } from "@/components/construction-mvp-flow-banner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   projects, milestones, risks, contracts, purchaseRequests, documents, people,
@@ -37,6 +38,8 @@ export default function ProjectDetailPage() {
 
   return (
     <>
+      <ConstructionMvpFlowBanner compact />
+
       <PageHeader
         title={p.name}
         description={p.description}

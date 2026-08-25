@@ -19,7 +19,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-exec-1",
     name: "Amara Osei",
-    email: "amara.osei@meridian-group.com",
+    email: "amara.osei@enterprise.internal",
     role: "Group CEO",
     domain: "Civil Infrastructure, Construction & Logistics Group",
     title: "Chief Executive Officer & Group Managing Director",
@@ -32,7 +32,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-dir-const",
     name: "Marcus Lindqvist",
-    email: "marcus.l@meridian-construction.com",
+    email: "marcus.l@enterprise.internal",
     role: "Civil Engineering & Construction Director",
     domain: "Civil Engineering, EPC Contracts & Heavy Construction",
     title: "Managing Director — Engineering & Construction",
@@ -45,7 +45,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-fin-ctrl",
     name: "Sofia Marchetti",
-    email: "sofia.marchetti@meridian-group.com",
+    email: "sofia.marchetti@enterprise.internal",
     role: "Group CFO & Financial Controller",
     domain: "Capital Allocation, Treasury & Financial Control",
     title: "Head of Group Treasury & Financial Control",
@@ -58,7 +58,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-log-lead",
     name: "Daniel Reyes",
-    email: "daniel.reyes@meridian-logistics.com",
+    email: "daniel.reyes@enterprise.internal",
     role: "Logistics & Supply Chain Manager",
     domain: "Port Terminals, Fleet Assets & Freight Forwarding",
     title: "Director of Freight & Logistics Operations",
@@ -71,7 +71,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-fnd-lead",
     name: "Yara Haddad",
-    email: "yara.haddad@meridian-foundation.org",
+    email: "yara.haddad@enterprise.internal",
     role: "PPP Concessions & Foundation Lead",
     domain: "Public-Private Partnerships, Infrastructure Grants & ESG",
     title: "Executive Director — PPP Projects & CSR Foundation",
@@ -84,7 +84,7 @@ export const mockUsers: UserProfile[] = [
   {
     id: "usr-viewer-1",
     name: "External Auditor",
-    email: "audit.partner@kpmg-external.com",
+    email: "audit.partner@external-audit.internal",
     role: "GRC & Compliance Auditor",
     domain: "Independent Assurance, ISO 31000 Risk & Compliance",
     title: "Senior Governance & GRC Auditor",
@@ -106,7 +106,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-const AUTH_STORAGE_KEY = "meridian_os_auth_user_id";
+const AUTH_STORAGE_KEY = "enterprise_os_auth_user_id";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [userId, setUserId] = useState<string | null>(() => {

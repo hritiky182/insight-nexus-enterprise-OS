@@ -66,7 +66,7 @@ export default function LoginPage() {
           </div>
           <div>
             <h1 className="font-bold text-sm text-foreground tracking-tight flex items-center gap-2">
-              MERIDIAN <span className="text-muted-foreground font-normal">Enterprise OS</span>
+              ENTERPRISE <span className="text-muted-foreground font-normal">OS</span>
             </h1>
             <p className="text-[11px] text-muted-foreground">Group Control Tower & Operational System</p>
           </div>
@@ -253,7 +253,7 @@ export default function LoginPage() {
 
       {/* Footer */}
       <footer className="relative z-10 w-full border-t border-border bg-card/60 backdrop-blur-sm px-6 py-4 text-center text-xs text-muted-foreground">
-        <p>© 2027 MERIDIAN Group Control Tower · Multi-Entity Enterprise OS · Security Standard ISO/IEC 27001</p>
+        <p>© 2027 Group Control Tower · Multi-Entity Enterprise OS · Security Standard ISO/IEC 27001</p>
       </footer>
     </div>
   );

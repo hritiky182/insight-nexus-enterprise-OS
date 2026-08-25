@@ -132,7 +132,7 @@ export default function AIPage() {
                 if (aiKillSwitch) return;
                 const decisionPackText = `### AI DECISION PACK — EXECUTIVE SUMMARY
 **Target Issue:** Variation Order VO-014 (Water Treatment Works Extension)
-**Contracting Entity:** Meridian Civil Engineering & Construction Ltd
+**Contracting Entity:** Civil Engineering & Construction Operating Division
 **Contractor:** Apex Infrastructure Partners
 **Claim Value:** $4,260,000 | **Budget Impact:** +2.8% Contingency Drawdown
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { EntityProvider } from "@/components/entity-context";
 import { AuthProvider } from "@/components/auth-context";
@@ -10,16 +10,12 @@ import LoginPage from "@/routes/login";
 import DashboardPage from "@/routes/index";
 import ProjectsIndexPage from "@/routes/projects.index";
 import ProjectDetailPage from "@/routes/projects.$projectId";
-import BusinessDevelopmentPage from "@/routes/business-development";
-import ContractsIndexPage from "@/routes/contracts.index";
-import ContractDetailPage from "@/routes/contracts.$contractId";
-import ProcurementPage from "@/routes/procurement";
-import FinancePage from "@/routes/finance";
-import RisksPage from "@/routes/risks";
-import ApprovalsPage from "@/routes/approvals";
-import DocumentsPage from "@/routes/documents";
-import PeoplePage from "@/routes/people";
-import AssetsPage from "@/routes/assets";
+import SiteUsersPage from "@/routes/site-users";
+import DailyReportingPage from "@/routes/daily-reporting";
+import ProgressTrackingPage from "@/routes/progress-tracking";
+import IssuesRfisPage from "@/routes/issues-rfis";
+import QualityHsePage from "@/routes/quality-hse";
+import DocumentsApprovalsPage from "@/routes/documents-approvals";
 import AIPage from "@/routes/ai";
 import SettingsPage from "@/routes/settings";
 
@@ -64,7 +60,7 @@ export default function App() {
               {/* Unrestricted Public Route */}
               <Route path="/login" element={<LoginPage />} />
 
-              {/* Protected Application Routes */}
+              {/* Protected Construction Site Operations MVP Flow Routes */}
               <Route
                 element={
                   <ProtectedRoute>
@@ -72,21 +68,45 @@ export default function App() {
                   </ProtectedRoute>
                 }
               >
+                {/* Step 8: Management Dashboard & Audit */}
                 <Route path="/" element={<DashboardPage />} />
+
+                {/* Step 1: Project & Site Setup */}
                 <Route path="/projects" element={<ProjectsIndexPage />} />
                 <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
-                <Route path="/business-development" element={<BusinessDevelopmentPage />} />
-                <Route path="/contracts" element={<ContractsIndexPage />} />
-                <Route path="/contracts/:contractId" element={<ContractDetailPage />} />
-                <Route path="/procurement" element={<ProcurementPage />} />
-                <Route path="/finance" element={<FinancePage />} />
-                <Route path="/risks" element={<RisksPage />} />
-                <Route path="/approvals" element={<ApprovalsPage />} />
-                <Route path="/documents" element={<DocumentsPage />} />
-                <Route path="/people" element={<PeoplePage />} />
-                <Route path="/assets" element={<AssetsPage />} />
+
+                {/* Step 2: Site Users & Access */}
+                <Route path="/site-users" element={<SiteUsersPage />} />
+
+                {/* Step 3: Daily Site Reporting */}
+                <Route path="/daily-reporting" element={<DailyReportingPage />} />
+
+                {/* Step 4: Progress Tracking */}
+                <Route path="/progress-tracking" element={<ProgressTrackingPage />} />
+
+                {/* Step 5: Issues / Tasks / RFIs */}
+                <Route path="/issues-rfis" element={<IssuesRfisPage />} />
+
+                {/* Step 6: Inspection / Quality / HSE */}
+                <Route path="/quality-hse" element={<QualityHsePage />} />
+
+                {/* Step 7: Documents & Approvals */}
+                <Route path="/documents-approvals" element={<DocumentsApprovalsPage />} />
+
+                {/* Platform System & Settings */}
                 <Route path="/ai" element={<AIPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+
+                {/* Legacy route redirects to Construction MVP Flow */}
+                <Route path="/people" element={<Navigate to="/site-users" replace />} />
+                <Route path="/risks" element={<Navigate to="/quality-hse" replace />} />
+                <Route path="/documents" element={<Navigate to="/documents-approvals" replace />} />
+                <Route path="/approvals" element={<Navigate to="/documents-approvals" replace />} />
+                <Route path="/assets" element={<Navigate to="/progress-tracking" replace />} />
+                <Route path="/business-development" element={<Navigate to="/projects" replace />} />
+                <Route path="/procurement" element={<Navigate to="/projects" replace />} />
+                <Route path="/contracts" element={<Navigate to="/documents-approvals" replace />} />
+
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

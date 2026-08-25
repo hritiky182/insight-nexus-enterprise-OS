@@ -212,8 +212,8 @@ export const contracts: Contract[] = [
   { id: "CTR-4102", title: "Main Works Contract — Section 4", counterparty: "Regional Highways Authority", entity: "construction", project: "PRJ-2041", type: "Client — FIDIC Yellow", value: 184_500_000, status: "active", start: "2024-03-11", expiry: "2026-12-31", risk: "high", owner: "Group Legal" },
   { id: "CTR-4188", title: "Earthworks Subcontract Package E2", counterparty: "Terra Civil Works", entity: "construction", project: "PRJ-2041", type: "Subcontract", value: 38_200_000, status: "active", start: "2024-05-02", expiry: "2026-08-31", risk: "medium", owner: "Amara Osei" },
   { id: "CTR-4211", title: "ICD Expansion EPC Agreement", counterparty: "Port & Freight Consortium", entity: "logistics", project: "PRJ-2088", type: "Client — EPC", value: 76_400_000, status: "active", start: "2024-09-02", expiry: "2026-07-15", risk: "medium", owner: "Group Legal" },
-  { id: "CTR-3990", title: "Membrane Supply & Commissioning", counterparty: "Aquafilt Systems", entity: "construction", project: "PRJ-1994", type: "Supply", value: 14_800_000, status: "under-review", start: "2023-08-14", expiry: "2026-09-15", risk: "critical", owner: "Tomás Okafor" },
-  { id: "CTR-4260", title: "Depot Design Services", counterparty: "Meridian Engineering", entity: "construction", project: "PRJ-2103", type: "Consultancy", value: 9_600_000, status: "active", start: "2025-02-03", expiry: "2027-06-30", risk: "low", owner: "Lena Fischer" },
+  { id: "CTR-3990", title: "Membrane Supply & Commissioning", counterparty: "AquaProcess Solutions", entity: "construction", project: "PRJ-1994", type: "Supply", value: 14_800_000, status: "under-review", start: "2023-08-14", expiry: "2026-09-15", risk: "critical", owner: "Tomás Okafor" },
+  { id: "CTR-4260", title: "Depot Design Services", counterparty: "Apex Engineering Solutions", entity: "construction", project: "PRJ-2103", type: "Consultancy", value: 9_600_000, status: "active", start: "2025-02-03", expiry: "2027-06-30", risk: "low", owner: "Lena Fischer" },
   { id: "CTR-4275", title: "Fleet Leasing Master Agreement", counterparty: "Northline Mobility", entity: "logistics", project: "PRJ-2120", type: "Lease", value: 6_400_000, status: "expiring", start: "2023-10-01", expiry: "2026-09-30", risk: "medium", owner: "Priya Nandakumar" },
   { id: "CTR-4301", title: "GIS Equipment Supply", counterparty: "Voltcore Industries", entity: "construction", project: "PRJ-2011", type: "Supply", value: 31_900_000, status: "active", start: "2024-04-19", expiry: "2026-05-30", risk: "high", owner: "Marcus Lindqvist" },
   { id: "CTR-4320", title: "Grant Funding Agreement — Health Campus", counterparty: "Regional Health Trust", entity: "foundation", project: "PRJ-2135", type: "Grant", value: 21_700_000, status: "draft", start: "2025-11-03", expiry: "2027-06-30", risk: "low", owner: "Yara Haddad" },
@@ -249,7 +249,7 @@ export const purchaseRequests: PurchaseItem[] = [
   { id: "PR-8841", title: "Reinforcement steel — 1,200 t", entity: "construction", project: "PRJ-2041", supplier: "Ferro Metals Group", amount: 1_980_000, stage: "Approval", status: "pending", requester: "Site Procurement", date: "2026-08-11" },
   { id: "PR-8836", title: "Precast beam segments — batch 3", entity: "construction", project: "PRJ-2041", supplier: "Castform Precast", amount: 3_420_000, stage: "Sourcing", status: "approved", requester: "Amara Osei", date: "2026-08-06" },
   { id: "PR-8852", title: "RTG crane spares package", entity: "logistics", project: "PRJ-2088", supplier: "Harbourtech Systems", amount: 640_000, stage: "Evaluation", status: "pending", requester: "Daniel Reyes", date: "2026-08-13" },
-  { id: "PR-8809", title: "Membrane modules — replacement set", entity: "construction", project: "PRJ-1994", supplier: "Aquafilt Systems", amount: 2_150_000, stage: "PO", status: "approved", requester: "Tomás Okafor", date: "2026-07-29" },
+  { id: "PR-8809", title: "Membrane modules — replacement set", entity: "construction", project: "PRJ-1994", supplier: "AquaProcess Solutions", amount: 2_150_000, stage: "PO", status: "approved", requester: "Tomás Okafor", date: "2026-07-29" },
   { id: "PR-8860", title: "Racking system — cold zone", entity: "logistics", project: "PRJ-2120", supplier: "Storex Solutions", amount: 880_000, stage: "Request", status: "pending", requester: "Warehouse Ops", date: "2026-08-15" },
   { id: "PR-8790", title: "Medical fit-out package", entity: "foundation", project: "PRJ-2135", supplier: "Careline Equipment", amount: 1_240_000, stage: "Delivery", status: "delivered", requester: "Yara Haddad", date: "2026-07-14" },
 ];
@@ -257,7 +257,7 @@ export const purchaseRequests: PurchaseItem[] = [
 export const purchaseOrders = [
   { id: "PO-5521", supplier: "Castform Precast", entity: "construction", project: "PRJ-2041", amount: 3_420_000, issued: "2026-08-08", delivery: "2026-10-02", status: "In production" },
   { id: "PO-5498", supplier: "Ferro Metals Group", entity: "construction", project: "PRJ-2103", amount: 2_760_000, issued: "2026-07-22", delivery: "2026-09-18", status: "Partially delivered" },
-  { id: "PO-5533", supplier: "Aquafilt Systems", entity: "construction", project: "PRJ-1994", amount: 2_150_000, issued: "2026-08-12", delivery: "2026-11-05", status: "Acknowledged" },
+  { id: "PO-5533", supplier: "AquaProcess Solutions", entity: "construction", project: "PRJ-1994", amount: 2_150_000, issued: "2026-08-12", delivery: "2026-11-05", status: "Acknowledged" },
   { id: "PO-5476", supplier: "Harbourtech Systems", entity: "logistics", project: "PRJ-2088", amount: 1_180_000, issued: "2026-06-30", delivery: "2026-08-28", status: "Delivered" },
   { id: "PO-5541", supplier: "Northline Mobility", entity: "logistics", project: "PRJ-2120", amount: 690_000, issued: "2026-08-14", delivery: "2026-09-30", status: "Acknowledged" },
 ];
@@ -265,7 +265,7 @@ export const purchaseOrders = [
 export const suppliers = [
   { id: "SUP-101", name: "Ferro Metals Group", category: "Materials", spend: 14_200_000, rating: 4.6, onTime: 94, quality: 96, status: "Approved", contracts: 6 },
   { id: "SUP-118", name: "Castform Precast", category: "Precast", spend: 9_800_000, rating: 4.2, onTime: 88, quality: 92, status: "Approved", contracts: 4 },
-  { id: "SUP-122", name: "Aquafilt Systems", category: "Process equipment", spend: 16_950_000, rating: 3.1, onTime: 61, quality: 84, status: "Under review", contracts: 2 },
+  { id: "SUP-122", name: "AquaProcess Solutions", category: "Process equipment", spend: 16_950_000, rating: 3.1, onTime: 61, quality: 84, status: "Under review", contracts: 2 },
   { id: "SUP-140", name: "Harbourtech Systems", category: "Handling equipment", spend: 7_400_000, rating: 4.4, onTime: 91, quality: 93, status: "Approved", contracts: 3 },
   { id: "SUP-155", name: "Voltcore Industries", category: "Electrical", spend: 31_900_000, rating: 4.0, onTime: 82, quality: 95, status: "Approved", contracts: 2 },
   { id: "SUP-163", name: "Northline Mobility", category: "Fleet", spend: 6_100_000, rating: 3.8, onTime: 87, quality: 88, status: "Approved", contracts: 5 },
@@ -273,7 +273,7 @@ export const suppliers = [
 
 export const tenders = [
   { id: "TND-221", title: "Pavement & surfacing package", project: "PRJ-2041", bidders: 5, lowest: 24_100_000, recommended: "Terra Civil Works", score: 88.4, status: "Evaluation" },
-  { id: "TND-214", title: "Depot M&E installation", project: "PRJ-2103", bidders: 4, lowest: 18_600_000, recommended: "Meridian Engineering", score: 84.1, status: "Award pending" },
+  { id: "TND-214", title: "Depot M&E installation", project: "PRJ-2103", bidders: 4, lowest: 18_600_000, recommended: "Apex Engineering Solutions", score: 84.1, status: "Award pending" },
   { id: "TND-229", title: "Cold chain refrigeration", project: "PRJ-2120", bidders: 6, lowest: 5_900_000, recommended: "Polarline Cooling", score: 91.2, status: "Evaluation" },
 ];
 
@@ -290,7 +290,7 @@ export const approvals = [
 export const documents = [
   { id: "DOC-7741", name: "Section 4 — Consolidated Progress Report Aug 2026.pdf", folder: "Projects / PRJ-2041 / Reports", entity: "construction", project: "PRJ-2041", category: "Report", classification: "Internal", version: "v12.0", owner: "Amara Osei", modified: "2026-08-14", size: "8.4 MB" },
   { id: "DOC-7702", name: "Main Works Contract — Executed.pdf", folder: "Contracts / CTR-4102", entity: "construction", project: "PRJ-2041", category: "Contract", classification: "Confidential", version: "v1.0", owner: "Group Legal", modified: "2024-03-12", size: "22.1 MB" },
-  { id: "DOC-7788", name: "Geotechnical Investigation — IC-2 Addendum.pdf", folder: "Projects / PRJ-2041 / Technical", entity: "construction", project: "PRJ-2041", category: "Technical", classification: "Internal", version: "v3.1", owner: "Meridian Engineering", modified: "2026-06-11", size: "34.7 MB" },
+  { id: "DOC-7788", name: "Geotechnical Investigation — IC-2 Addendum.pdf", folder: "Projects / PRJ-2041 / Technical", entity: "construction", project: "PRJ-2041", category: "Technical", classification: "Internal", version: "v3.1", owner: "Apex Engineering Solutions", modified: "2026-06-11", size: "34.7 MB" },
   { id: "DOC-7810", name: "Group Cash Flow Forecast Q3-Q4 2026.xlsx", folder: "Finance / Treasury", entity: "bizdev", project: "—", category: "Financial", classification: "Restricted", version: "v5.2", owner: "Group Treasury", modified: "2026-08-12", size: "3.2 MB" },
   { id: "DOC-7756", name: "ICD Expansion — HSE Plan.pdf", folder: "Projects / PRJ-2088 / HSE", entity: "logistics", project: "PRJ-2088", category: "HSE", classification: "Internal", version: "v4.0", owner: "HSE Lead", modified: "2026-05-28", size: "6.9 MB" },
   { id: "DOC-7829", name: "Tender Evaluation Report — TND-221.pdf", folder: "Procurement / Tenders", entity: "construction", project: "PRJ-2041", category: "Procurement", classification: "Confidential", version: "v2.0", owner: "Procurement Board", modified: "2026-08-09", size: "11.3 MB" },
@@ -397,7 +397,7 @@ export const activity = [
 
 export const projectActivity = [
   { id: 1, actor: "Amara Osei", action: "Variation order VO-014 submitted", detail: "Ground improvement at IC-2 — 4.26M", time: "18 Jun 2026" },
-  { id: 2, actor: "Meridian Engineering", action: "Geotechnical addendum issued", detail: "Revised bearing capacity at IC-2 piers", time: "11 Jun 2026" },
+  { id: 2, actor: "Apex Engineering Solutions", action: "Geotechnical addendum issued", detail: "Revised bearing capacity at IC-2 piers", time: "11 Jun 2026" },
   { id: 3, actor: "Group Legal", action: "Extension of time claim CL-006 lodged", detail: "58 days claimed for permit delay", time: "04 Jul 2026" },
   { id: 4, actor: "Procurement Board", action: "Tender TND-221 evaluation completed", detail: "Terra Civil Works recommended — score 88.4", time: "09 Aug 2026" },
   { id: 5, actor: "HSE Lead", action: "Corrective action CA-212 raised", detail: "Scaffolding non-conformance, due 25 Aug", time: "13 Aug 2026" },
@@ -506,7 +506,7 @@ export const payables = [
   { supplier: "Ferro Metals Group", current: 2_600_000, d30: 1_100_000, d60: 0, d90: 0 },
   { supplier: "Voltcore Industries", current: 4_900_000, d30: 2_400_000, d60: 700_000, d90: 0 },
   { supplier: "Castform Precast", current: 1_800_000, d30: 900_000, d60: 320_000, d90: 0 },
-  { supplier: "Aquafilt Systems", current: 1_200_000, d30: 0, d60: 480_000, d90: 610_000 },
+  { supplier: "AquaProcess Solutions", current: 1_200_000, d30: 0, d60: 480_000, d90: 610_000 },
 ];
 
 export const projectProfitability = [
@@ -531,7 +531,7 @@ export const aiSuggestions = [
 export const aiResponses: Record<string, string> = {
   "What projects are currently at risk?": `Three projects are outside tolerance this period.
 
-**PRJ-1994 Water Treatment Plant Upgrade** — delayed, critical risk. Actual cost 61.9M against a 58.3M budget (+6.2%) with 18% of works remaining. Root cause is the membrane supplier (Aquafilt Systems, on-time delivery 61%).
+**PRJ-1994 Water Treatment Plant Upgrade** — delayed, critical risk. Actual cost 61.9M against a 58.3M budget (+6.2%) with 18% of works remaining. Root cause is the membrane supplier (AquaProcess Solutions, on-time delivery 61%).
 
 **PRJ-2041 Coastal Ring Road Section 4** — at risk, health 62. Physical progress 68% against a 74% baseline. Two drivers: coastal permit renewal (R-118) and worse-than-baseline ground conditions at IC-2 (R-101), with a 58-day extension of time claim lodged.
 
@@ -614,3 +614,344 @@ export const fmtDate = (iso: string) =>
 export type Approval = (typeof approvals)[number];
 export type Asset = (typeof assets)[number];
 export type Shipment = (typeof shipments)[number];
+
+/* ---------- Construction Site Operations MVP Flow Data ---------- */
+
+export interface DailySiteLog {
+  id: string;
+  date: string;
+  projectCode: string;
+  projectName: string;
+  supervisor: string;
+  shift: "Morning" | "Night" | "Full Day";
+  workDone: string;
+  progressPercent: number;
+  workforceCount: number;
+  photos: string[];
+  notes: string;
+  delays: string;
+  weather: string;
+}
+
+export const dailySiteLogs: DailySiteLog[] = [
+  {
+    id: "DSL-101",
+    date: "2026-08-25",
+    projectCode: "PRJ-2041",
+    projectName: "Coastal Ring Road — Section 4",
+    supervisor: "Amara Osei",
+    shift: "Morning",
+    workDone: "Casting of Viaduct V1 Pier 4 cap completed. Rebar fixing on Pier 5 ongoing. 450m³ grade C40 concrete poured.",
+    progressPercent: 68,
+    workforceCount: 42,
+    photos: ["/photos/site1.jpg", "/photos/site2.jpg"],
+    notes: "High humidity during concrete pour. Temperature monitored closely with thermocouple sensors.",
+    delays: "30 min delay due to concrete truck dispatch bottleneck at batching plant B2.",
+    weather: "Sunny, 34°C"
+  },
+  {
+    id: "DSL-102",
+    date: "2026-08-24",
+    projectCode: "PRJ-2103",
+    projectName: "Metro Line 3 — Depot & Workshop",
+    supervisor: "Lena Fischer",
+    shift: "Full Day",
+    workDone: "Stabling yard sub-grade compaction 100% finished. Track bed drainage pipe laying (Section B) initiated.",
+    progressPercent: 39,
+    workforceCount: 38,
+    photos: ["/photos/depot1.jpg"],
+    notes: "Site safety toolbox talk held at 07:00 AM covering heavy crane lifting radius.",
+    delays: "No delays recorded.",
+    weather: "Clear, 30°C"
+  },
+  {
+    id: "DSL-103",
+    date: "2026-08-24",
+    projectCode: "PRJ-1994",
+    projectName: "Water Treatment Plant Upgrade",
+    supervisor: "Tomás Okafor",
+    shift: "Full Day",
+    workDone: "Filtration basin 2 membrane cassette mounting frame alignment check.",
+    progressPercent: 82,
+    workforceCount: 26,
+    photos: ["/photos/water1.jpg"],
+    notes: "Awaiting final batch of membrane modules from AquaProcess Solutions.",
+    delays: "Material delivery delay from port warehouse.",
+    weather: "Partly Cloudy, 28°C"
+  }
+];
+
+export interface VehicleLog {
+  id: string;
+  vehicleNo: string;
+  type: string;
+  driver: string;
+  route: string;
+  item: string;
+  status: "In Transit" | "Dispatched" | "Delivered" | "Delayed";
+  timestamp: string;
+  location: string;
+}
+
+export const vehicleLogs: VehicleLog[] = [
+  {
+    id: "VLOG-801",
+    vehicleNo: "K-TRK-4921",
+    type: "Transit Mixer 10m³",
+    driver: "Kofi Mensah",
+    route: "Batch Plant B2 -> Section 4 Viaduct V1",
+    item: "Ready-Mix Concrete Grade C40",
+    status: "Delivered",
+    timestamp: "09:30 AM",
+    location: "Section 4 Pier 4"
+  },
+  {
+    id: "VLOG-802",
+    vehicleNo: "K-TRK-9912",
+    type: "Flatbed Heavy Trailer",
+    driver: "Tariq Al-Mansoor",
+    route: "Precast Yard -> Interchange IC-2",
+    item: "Precast Girder Segment G-14",
+    status: "In Transit",
+    timestamp: "10:15 AM",
+    location: "Highway Mile 12"
+  },
+  {
+    id: "VLOG-803",
+    vehicleNo: "K-TRK-3305",
+    type: "Site Pickup 4x4",
+    driver: "HSE Inspector",
+    route: "Main Depot -> South Belt Yard",
+    item: "Safety Harness & Testing Rig",
+    status: "Dispatched",
+    timestamp: "11:00 AM",
+    location: "En Route to South Belt"
+  }
+];
+
+export interface RfiIssue {
+  id: string;
+  title: string;
+  projectCode: string;
+  type: "RFI" | "Issue" | "Task";
+  priority: "Critical" | "High" | "Medium" | "Low";
+  status: "Open" | "Assigned" | "In Review" | "Closed";
+  assignee: string;
+  siteLocation: string;
+  raisedBy: string;
+  date: string;
+  description: string;
+}
+
+export const rfisAndIssues: RfiIssue[] = [
+  {
+    id: "RFI-304",
+    title: "Clarification on Rebar Detailing at Interchange Pier IC-2",
+    projectCode: "PRJ-2041",
+    type: "RFI",
+    priority: "Critical",
+    status: "In Review",
+    assignee: "Lead Structural Engineer",
+    siteLocation: "Interchange IC-2",
+    raisedBy: "Amara Osei (PM)",
+    date: "2026-08-23",
+    description: "Conflict between structural drawing S-204 and architectural clearance requirements for pier cap rebar overlap."
+  },
+  {
+    id: "ISS-412",
+    title: "Ground Subsidence near North Abutment Trench",
+    projectCode: "PRJ-2041",
+    type: "Issue",
+    priority: "High",
+    status: "Open",
+    assignee: "Geotech Engineer",
+    siteLocation: "North Abutment",
+    raisedBy: "Supervisor Jabari",
+    date: "2026-08-24",
+    description: "Minor soil movement detected after heavy rain. Retaining wall reinforcement required before further excavation."
+  },
+  {
+    id: "TSK-589",
+    title: "Install Boundary Safety Fencing around Stabling Yard",
+    projectCode: "PRJ-2103",
+    type: "Task",
+    priority: "Medium",
+    status: "Assigned",
+    assignee: "Site Supervisor",
+    siteLocation: "Depot Yard B",
+    raisedBy: "Lena Fischer (PM)",
+    date: "2026-08-22",
+    description: "Perimeter security fence installation to protect electrical substation equipment."
+  },
+  {
+    id: "RFI-310",
+    title: "Membrane Filtration Gasket Material Specification",
+    projectCode: "PRJ-1994",
+    type: "RFI",
+    priority: "High",
+    status: "Closed",
+    assignee: "Tomás Okafor",
+    siteLocation: "Western Basin WTP",
+    raisedBy: "Quality Inspector",
+    date: "2026-08-20",
+    description: "EPDM vs Viton gasket specification approval for high-salinity backwash lines."
+  }
+];
+
+export interface HseInspection {
+  id: string;
+  site: string;
+  type: "Safety Observation" | "Quality Inspection" | "HSE Compliance Audit";
+  status: "Passed" | "Action Required" | "Closed";
+  score: number;
+  findings: string;
+  auditor: string;
+  date: string;
+  actionItem?: string;
+}
+
+export const hseInspections: HseInspection[] = [
+  {
+    id: "HSE-901",
+    site: "Section 4 Viaduct Site",
+    type: "Safety Observation",
+    status: "Action Required",
+    score: 88,
+    findings: "Scaffolding work platform missing toe-boards at Level 3 Pier 4.",
+    auditor: "Senior HSE Officer",
+    date: "2026-08-25",
+    actionItem: "Install standard 150mm toe-boards before work resumes."
+  },
+  {
+    id: "HSE-902",
+    site: "Metro Depot Workshop",
+    type: "Quality Inspection",
+    status: "Passed",
+    score: 96,
+    findings: "Steel welding ultrasonic non-destructive testing (NDT) passed 100% compliance.",
+    auditor: "QC Manager",
+    date: "2026-08-24"
+  },
+  {
+    id: "HSE-903",
+    site: "Western Basin WTP",
+    type: "HSE Compliance Audit",
+    status: "Closed",
+    score: 92,
+    findings: "Chemical storage bunding capacity verified. Emergency eyewash station tested and operational.",
+    auditor: "Group Environmental Auditor",
+    date: "2026-08-21"
+  }
+];
+
+export interface DrawingSubmittal {
+  id: string;
+  code: string;
+  title: string;
+  projectCode: string;
+  revision: string;
+  category: "Structural Drawing" | "Architectural Submittal" | "MEP Specification";
+  reviewStatus: "Approved" | "Pending Review" | "Revision Required";
+  approver: string;
+  date: string;
+  fileSize: string;
+}
+
+export const drawingsAndSubmittals: DrawingSubmittal[] = [
+  {
+    id: "SUB-701",
+    code: "DRW-2041-S-04",
+    title: "Viaduct V1 Superstructure & Deck Casting Details",
+    projectCode: "PRJ-2041",
+    revision: "Rev C",
+    category: "Structural Drawing",
+    reviewStatus: "Approved",
+    approver: "Amara Osei",
+    date: "2026-08-22",
+    fileSize: "14.2 MB"
+  },
+  {
+    id: "SUB-702",
+    code: "SUB-2103-M-12",
+    title: "Maintenance Workshop Overhead Crane Technical Data Sheet",
+    projectCode: "PRJ-2103",
+    revision: "Rev B",
+    category: "MEP Specification",
+    reviewStatus: "Pending Review",
+    approver: "Lena Fischer",
+    date: "2026-08-24",
+    fileSize: "6.8 MB"
+  },
+  {
+    id: "SUB-703",
+    code: "DRW-1994-P-02",
+    title: "Membrane Skid Piping & Valve Sub-Assembly Diagram",
+    projectCode: "PRJ-1994",
+    revision: "Rev A",
+    category: "Architectural Submittal",
+    reviewStatus: "Revision Required",
+    approver: "Tomás Okafor",
+    date: "2026-08-20",
+    fileSize: "9.5 MB"
+  }
+];
+
+export interface AuditEvent {
+  id: string;
+  timestamp: string;
+  actor: string;
+  role: string;
+  action: string;
+  entity: string;
+  details: string;
+}
+
+export const auditTrail: AuditEvent[] = [
+  {
+    id: "AUD-501",
+    timestamp: "2026-08-25 09:42",
+    actor: "Amara Osei",
+    role: "Project Manager",
+    action: "Approved Drawing Submittal DRW-2041-S-04 (Rev C)",
+    entity: "Civil Engineering & Construction",
+    details: "Structural approval for Viaduct V1 Deck Casting."
+  },
+  {
+    id: "AUD-502",
+    timestamp: "2026-08-25 08:15",
+    actor: "Site Engineer Jabari",
+    role: "Site Engineer",
+    action: "Logged Daily Site Report #DSL-101",
+    entity: "Civil Engineering & Construction",
+    details: "Recorded 450m³ concrete pour and 42 site workers."
+  },
+  {
+    id: "AUD-503",
+    timestamp: "2026-08-24 16:30",
+    actor: "Senior HSE Officer",
+    role: "HSE/Quality Lead",
+    action: "Raised HSE Safety Observation HSE-901",
+    entity: "Civil Engineering & Construction",
+    details: "Flagged scaffolding toe-board action item."
+  },
+  {
+    id: "AUD-504",
+    timestamp: "2026-08-24 14:10",
+    actor: "Lena Fischer",
+    role: "Project Director",
+    action: "Updated Progress Tracking for PRJ-2103 to 39%",
+    entity: "Civil Engineering & Construction",
+    details: "Milestone 'Sub-grade compaction' marked 100% complete."
+  }
+];
+
+export const constructionMvpSteps = [
+  { step: 1, title: "Project & Site Setup", items: ["Project", "Entity", "Team", "Milestones"], to: "/projects" },
+  { step: 2, title: "Site Users & Access", items: ["PM", "Site Engineer", "Supervisor", "HSE/Quality"], to: "/site-users" },
+  { step: 3, title: "Daily Site Reporting", items: ["Progress", "Work Done", "Photos", "Notes"], to: "/daily-reporting" },
+  { step: 4, title: "Progress Tracking", items: ["% Complete", "Milestones", "Vehicle Pick/Drop", "Location", "Delays"], to: "/progress-tracking" },
+  { step: 5, title: "Issues / Tasks / RFIs", items: ["Raise", "Assign", "Track", "Close"], to: "/issues-rfis" },
+  { step: 6, title: "Inspection / Quality / HSE", items: ["Observations", "Actions", "Compliance"], to: "/quality-hse" },
+  { step: 7, title: "Documents & Approvals", items: ["Drawings", "Submittals", "Review", "Approve"], to: "/documents-approvals" },
+  { step: 8, title: "Management Dashboard & Audit", items: ["Project Status", "Alerts", "Pending Approvals", "Audit Trail"], to: "/" },
+] as const;

@@ -1,8 +1,8 @@
 import { Link, useLocation, useNavigate, Outlet } from "react-router-dom";
 import {
-  LayoutDashboard, FolderKanban, TrendingUp, FileSignature, ShoppingCart, Wallet,
-  ShieldAlert, FileText, Users, Truck, CheckSquare, Sparkles, Settings, Search,
-  Bell, HelpCircle, ChevronsUpDown, Check, Menu, X, Layers, LogOut, ShieldCheck,
+  LayoutDashboard, FolderKanban, Users, ClipboardList, Activity, MessageSquare,
+  ShieldCheck, FileCheck, Sparkles, Settings, Search,
+  Bell, HelpCircle, ChevronsUpDown, Check, Menu, X, Layers, LogOut, HardHat
 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -15,37 +15,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const nav = [
-  { section: "Overview", items: [{ to: "/", label: "Dashboard", icon: LayoutDashboard }] },
   {
-    section: "Delivery",
+    section: "Construction MVP Flow",
     items: [
-      { to: "/projects", label: "Projects", icon: FolderKanban },
-      { to: "/business-development", label: "Business Development", icon: TrendingUp },
-      { to: "/contracts", label: "Contracts", icon: FileSignature },
-      { to: "/procurement", label: "Procurement", icon: ShoppingCart },
+      { to: "/", label: "Dashboard & Audit", icon: LayoutDashboard },
+      { to: "/projects", label: "Project & Site Setup", icon: FolderKanban },
+      { to: "/site-users", label: "Site Users & Access", icon: Users },
+      { to: "/daily-reporting", label: "Daily Site Reporting", icon: ClipboardList },
+      { to: "/progress-tracking", label: "Progress Tracking", icon: Activity },
+      { to: "/issues-rfis", label: "Issues, Tasks & RFIs", icon: MessageSquare, badge: 4 },
+      { to: "/quality-hse", label: "Inspection / HSE", icon: ShieldCheck, badge: 3 },
+      { to: "/documents-approvals", label: "Documents & Approvals", icon: FileCheck, badge: 7 },
     ],
   },
   {
-    section: "Control",
+    section: "Platform Foundations",
     items: [
-      { to: "/finance", label: "Finance", icon: Wallet },
-      { to: "/risks", label: "Risks & Compliance", icon: ShieldAlert },
-      { to: "/approvals", label: "Approvals", icon: CheckSquare, badge: 7 },
-    ],
-  },
-  {
-    section: "Organization",
-    items: [
-      { to: "/documents", label: "Documents", icon: FileText },
-      { to: "/people", label: "People", icon: Users },
-      { to: "/assets", label: "Assets & Logistics", icon: Truck },
-    ],
-  },
-  {
-    section: "System",
-    items: [
-      { to: "/ai", label: "AI Intelligence", icon: Sparkles },
-      { to: "/settings", label: "Settings", icon: Settings },
+      { to: "/settings", label: "Platform Settings", icon: Settings },
+      { to: "/ai", label: "AI Site Copilot", icon: Sparkles },
     ],
   },
 ];
@@ -102,11 +89,11 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
     <div className="flex h-full flex-col bg-nav">
       <div className="flex items-center gap-2.5 border-b border-nav-border px-4 py-3.5">
         <span className="flex size-8 items-center justify-center rounded-md bg-primary">
-          <Layers className="size-4 text-primary-foreground" />
+          <HardHat className="size-4 text-primary-foreground" />
         </span>
         <div className="leading-tight">
-          <p className="text-[13px] font-semibold text-nav-foreground">Group Control Tower</p>
-          <p className="text-[11px] text-nav-muted">Enterprise Platform</p>
+          <p className="text-[13px] font-semibold text-nav-foreground">Enterprise OS</p>
+          <p className="text-[11px] text-primary font-medium">Construction Site Operations MVP</p>
         </div>
       </div>
 
